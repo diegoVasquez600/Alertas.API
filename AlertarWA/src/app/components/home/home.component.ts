@@ -12,6 +12,7 @@ export class HomeComponent implements OnInit {
 
   constructor(private _service:AlertService) {
     this.CargarAlertas();
+    
    }
 
   ngOnInit(): void {
@@ -20,9 +21,10 @@ export class HomeComponent implements OnInit {
   CargarAlertas(){
     this._service.getAlerts()
     .subscribe((data:any)=>{
-      this.Alertas=data;
+      this.Alertas=data[0];
       console.log(this.Alertas);
     });
+    
   }
 
 }
