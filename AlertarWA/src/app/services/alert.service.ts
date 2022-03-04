@@ -26,4 +26,10 @@ export class AlertService {
       return data;
     }));
   }
+  getAlertsbyUser(){
+    return this.getQuery("alertlist/3&53453dfdsf")
+    .pipe(map((data)=>{
+      return data;
+    }));
+  }
 }
