@@ -7,12 +7,16 @@ import {RouterModule} from '@angular/router';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
+import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
+import { CrearAlertasComponent } from './components/crear-alertas/crear-alertas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    NavMenuComponent,
+    CrearAlertasComponent    
   ],
   imports: [
     BrowserModule,
